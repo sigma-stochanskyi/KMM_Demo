@@ -1,0 +1,16 @@
+PODS:
+  - demo_kmm_module (1.0)
+
+DEPENDENCIES:
+  - demo_kmm_module (from `../demo_kmm_module`)
+
+EXTERNAL SOURCES:
+  demo_kmm_module:
+    :path: "../demo_kmm_module"
+
+SPEC CHECKSUMS:
+  demo_kmm_module: 0509411684a4d263b25b6dfc2e7ddd647d130d7d
+
+PODFILE CHECKSUM: 46e002e976078401bd3b12f4df8efaa481e43e1b
+
+COCOAPODS: 1.11.3

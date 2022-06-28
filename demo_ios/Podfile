@@ -1,0 +1,5 @@
+target 'demo_ios' do
+  use_frameworks!
+  platform :ios, '14.1'
+  pod 'demo_kmm_module', :path => '../demo_kmm_module'
+end
