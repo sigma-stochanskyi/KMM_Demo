@@ -1,4 +1,4 @@
-package com.nanit.kmmdemo.network.common
+package com.nanit.kmmdemo.data.network.common
 
 import io.ktor.util.reflect.*
 
