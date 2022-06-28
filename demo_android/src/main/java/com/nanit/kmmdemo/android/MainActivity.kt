@@ -2,11 +2,10 @@ package com.nanit.kmmdemo.android
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.nanit.kmmdemo.Greeting
 import android.widget.TextView
 
 fun greet(): String {
-    return Greeting().greeting()
+    return "Hola"
 }
 
 class MainActivity : AppCompatActivity() {

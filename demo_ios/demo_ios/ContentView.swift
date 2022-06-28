@@ -2,7 +2,7 @@ import SwiftUI
 import demo_kmm_module
 
 struct ContentView: View {
-	let greet = Greeting().greeting()
+	let greet = "Hola"
 
 	var body: some View {
 		Text(greet)
