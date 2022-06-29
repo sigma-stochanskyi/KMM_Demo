@@ -1,4 +1,4 @@
-package com.nanit.kmmdemo.data.network.features.response
+package com.nanit.kmmdemo.data.network.features.testdata.response
 
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
