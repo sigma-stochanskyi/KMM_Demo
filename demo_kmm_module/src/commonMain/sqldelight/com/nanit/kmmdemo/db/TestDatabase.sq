@@ -1,0 +1,20 @@
+CREATE TABLE testData(
+    user_id INTEGER,
+    id INTEGER,
+    title TEXT,
+    completed INTEGER AS Boolean
+);
+
+insertTestData:
+INSERT INTO testData(user_id, id, title, completed)
+    VALUES (?, ?, ?, ?);
+
+clearTestData:
+DELETE FROM testData;
+
+getTestData:
+SELECT * FROM testData;
+
+getFirstTestData:
+SELECT * FROM testData
+    LIMIT 1;
