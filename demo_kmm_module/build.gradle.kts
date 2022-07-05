@@ -3,6 +3,7 @@ plugins {
     kotlin("native.cocoapods")
     kotlin("plugin.serialization") version "1.6.10"
     id("com.android.library")
+    id("com.squareup.sqldelight")
 }
 
 version = "1.0"
@@ -39,6 +40,8 @@ kotlin {
         val androidMain by getting {
             dependencies {
                 implementation("io.ktor:ktor-client-okhttp:2.0.2")
+
+                implementation("com.squareup.sqldelight:android-driver:1.5.3")
             }
         }
         val androidTest by getting
@@ -52,6 +55,8 @@ kotlin {
             iosSimulatorArm64Main.dependsOn(this)
             dependencies {
                 implementation("io.ktor:ktor-client-darwin:2.0.2")
+
+                implementation("com.squareup.sqldelight:native-driver:1.5.3")
             }
         }
         val iosX64Test by getting
@@ -72,5 +77,11 @@ android {
     defaultConfig {
         minSdk = 26
         targetSdk = 32
+    }
+}
+
+sqldelight {
+    database("TestDatabase") {
+        packageName = "com.nanit.kmmdemo"
     }
 }
