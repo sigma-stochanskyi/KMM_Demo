@@ -3,14 +3,7 @@ import demo_kmm_module
 
 struct ContentView: View {
     
-    // TODO Should be moved to some DI
-	let fetchUseCase = FetchTestDataUseCase(
-        testDataRepository: TestDataRepositoryImpl(
-            testNetworkDataSource: TestNetworkDataSource(
-                networkClient: NetworkClientImpl()
-            )
-        )
-    )
+    let fetchUseCase = Injector().fetchTestDataUseCase()
     
     @State var greet = ""
     

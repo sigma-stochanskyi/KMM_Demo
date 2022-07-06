@@ -32,4 +32,6 @@ dependencies {
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.4.1")
 
     implementation("androidx.fragment:fragment-ktx:1.4.1")
+
+    implementation("io.insert-koin:koin-android:3.2.0")
 }

@@ -1,0 +1,16 @@
+CREATE TABLE testDataEntity(
+    userId INTEGER,
+    id INTEGER,
+    title TEXT,
+    completed INTEGER AS Boolean
+);
+
+insertTestData:
+INSERT INTO testDataEntity(userId, id, title, completed)
+    VALUES (?, ?, ?, ?);
+
+clearTestData:
+DELETE FROM testDataEntity;
+
+getTestData:
+SELECT * FROM testDataEntity;

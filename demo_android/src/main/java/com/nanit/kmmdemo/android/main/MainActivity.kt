@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.widget.TextView
 import androidx.activity.viewModels
 import com.nanit.kmmdemo.android.R
+import org.koin.androidx.viewmodel.ext.android.viewModel
 
 fun greet(): String {
     return "Hola"
@@ -12,7 +13,7 @@ fun greet(): String {
 
 class MainActivity : AppCompatActivity() {
 
-    private val viewModel: MainViewModel by viewModels<MainViewModel> { MainViewModel.Factory() }
+    private val viewModel: MainViewModel by viewModel()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
