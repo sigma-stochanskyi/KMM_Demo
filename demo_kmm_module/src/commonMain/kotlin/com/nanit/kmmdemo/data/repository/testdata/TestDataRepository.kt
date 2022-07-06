@@ -14,7 +14,7 @@ interface TestDataRepository {
 
 class TestDataRepositoryImpl(
     private val testNetworkDataSource: TestNetworkDataSource,
-    private val testLocalDataSource: TestLocalDataSource
+    private val testLocalDataSource: TestLocalDataSource,
 ) : TestDataRepository {
 
     override suspend fun fetchTestData(): TestData {

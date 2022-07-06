@@ -2,6 +2,7 @@ plugins {
     kotlin("multiplatform")
     kotlin("native.cocoapods")
     id("com.android.library")
+    id("com.squareup.sqldelight")
 }
 
 version = "1.0"
@@ -78,5 +79,11 @@ android {
     defaultConfig {
         minSdk = 26
         targetSdk = 32
+    }
+}
+
+sqldelight {
+    database("TestDatabase2") {
+        packageName = "com.nanit.kmmdemo"
     }
 }
